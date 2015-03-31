@@ -4,10 +4,10 @@
     <head>
         <meta charset="utf-8">
 
-        <title>reveal.js - The HTML Presentation Framework</title>
+        <title>How Websites Work - Mali Akmanalp</title>
 
-        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-        <meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="How websites work">
+        <meta name="author" content="Mali Akmanalp">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -41,7 +41,7 @@
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
                 <section>
-                    <h1>Hell is Other People's Data</h1>
+                    <h1>The Intergalactic Computer Network</h1>
                     <p>
                         <br/>
                         <small><a href="http://akmanalp.com/">Mali Akmanalp</a> / <a href="http://twitter.com/makmanalp">@makmanalp</a></small>
@@ -49,6 +49,7 @@
                 </section>
 
 
+                <!--
                 <section>
                     <img data-src="img/mali.jpg" alt="istanbul" width=300>
                     <p>
@@ -58,84 +59,38 @@
 
                 <section data-background-image="img/istanbul1.jpg"></section>
                 <section data-background-image="img/atlas_of_economic_complexity.png"></section>
+                --!>
 
                 <section>
-                    <img data-src="img/pila1.png" alt="bad UI">
+					<blockquote cite="http://www.forbes.com/asap/2000/1127/105_print.html">
+                    <p>&ldquo;... the main and essential medium of informational interaction for governments, institutions, corporations, and individuals&rdquo;</p>
+                    - Licklider, BBN, 1963
+					</blockquote>
                 </section>
+                <section data-background-image="http://ethernethistory.typepad.com/.a/6a00df351cc9ad88330167668d4eb5970b-800wi"></section>
                 <section>
-                    <img data-src="img/pila2.png" alt="bad UI">
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                    <p>&ldquo;I predict the Internet will soon go spectacularly supernova and in 1996 catastrophically collapse.&rdquo;</p>
+                    - Metcalfe, 1995
+					</blockquote>
                 </section>
-                <section data-background-image="img/house_sigh.gif"></section>
-                <section>
-                    <img data-src="img/take_this.png" alt="take this!" width=600>
-                    <pre><code>
-import pandas as pd
-                    </code></pre>
-                </section>
+                <section data-background-image="http://upload.wikimedia.org/wikipedia/commons/e/e4/First-arpanet-imp-log.jpg" data-background-size=800px></section>
+                <section data-background-image="https://universalgeek.files.wordpress.com/2013/01/20130103-074710.jpg" data-background-size=600px></section>
+                <section data-background-image="http://upload.wikimedia.org/wikipedia/commons/6/60/Internet_map_in_February_82.png" data-background-size=600px></section>
+                <section data-background-image="http://cdni.wired.co.uk/1240x826/a_c/03_13.jpg" ></section>
+                <section data-background-image="http://tidbits.com/iskm/iskm3html/pt3/ch12/imgs/12FIG15.gif" data-background-size=600px></section>
+                <section data-background-image="https://blog.bufferapp.com/wp-content/uploads/2014/02/google.jpg" data-background-size=900px></section>
 
-                <section>
-                        <p>Military surplus gear given to law enforcement</p>
-                        <p><a href="https://github.com/TheUpshot/Military-Surplus-Gear">https://github.com/TheUpshot/Military-Surplus-Gear</a></p>
-                </section>
-
-                <section><h2>Reading Data In</h2></section>
-                <section>
-                    <pre><code data-trim>
-In [1]: pd.read_&lt;tab&gt;
-pd.read_clipboard  pd.read_fwf        pd.read_html       pd.read_pickle
-pd.read_sql_table  pd.read_csv        pd.read_gbq        pd.read_json
-pd.read_sql        pd.read_stata      pd.read_excel      pd.read_hdf
-pd.read_msgpack    pd.read_sql_query  pd.read_table
-                    </code></pre>
-                </section>
-                <section><h3>Encoding Issues</h3></section>
-                <section>
-                    <pre><code data-trim>
-In [5]: pd.read_stata("state_names.dta")
-Out[5]:
-     r                           r_name
-0    1                   Aguascalientes
-...
-14  15                          MÃ©xico
-15  16             MichoacÃ¡n de Ocampo
-                    </code></pre>
-                </section>
-                <section>
-                    <pre><code data-trim>
-In [6]: pd.read_stata("state_names.dta", encoding="utf-8")
-Out[6]:
-     r                           r_name
-0    1                   Aguascalientes
-...
-14  15                           México
-15  16              Michoacán de Ocampo
-                    </code></pre>
-                </section>
-
-                <section>
-                    <pre><code data-trim>
->>> import chardet
->>> chardet.detect(rawdata)
-{'encoding': 'EUC-JP', 'confidence': 0.99}
-                    </code></pre>
-                </section>
-
-                <section>
-                    <pre><code data-trim>
-$ file boston_python_is_awesome.tsv
-boston_python_is_awesome.tsv: UTF-8 Unicode English text
-                    </code></pre>
-                </section>
-
-                <section>
-                    <pre><code data-trim>
->>> from unidecode import unidecode
->>> print u'H\xeb\xe4vy M\xebt\xe4l'
-Hëävy Mëtäl
->>> unidecode(u'H\xeb\xe4vy M\xebt\xe4l')
-'Heavy Metal'
-                    </code></pre>
-                </section>
+                <section><h2>Under the hood</h2></section>
+                <section data-background-image="http://www.cheswick.com/ches/map/gallery/isp-ss.gif" data-background-size=900px></section>
+                <section><img src="img/browser.png"/></section>
+                <section><p>atlas.cid.harvard.edu</p></section>
+                <section><p>54.172.187.241</p></section>
+                <section><p>No central authority</p></section>
+                <section><h3>Demo</h3></section>
+                <section><p>nslookup</p></section>
+                <section><p>ping</p></section>
+                <section><p>traceroute</p></section>
 
                 <section>
                     <h2> Taking a peek</h2>
